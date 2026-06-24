@@ -1,7 +1,0 @@
-# Python cache
-__pycache__/
-DIC_LLM/__pycache__/
-*.py[cod]
-
-#environment variables
-.env

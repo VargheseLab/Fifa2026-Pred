@@ -3,8 +3,6 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-# Load secret variables from the .env file into the system environment #gitignore
-load_dotenv()
 
 def ask_agent_with_search(prompt_text: str) -> str:
     """
@@ -20,7 +18,7 @@ def ask_agent_with_search(prompt_text: str) -> str:
     
     # Safety check to prevent confusing errors if the .env file is missing
     if not api_key:
-        raise ValueError("API Key is missing! Please check your .env file.")
+        raise ValueError("API Key is missing! Please checkk your .env file.")
 
     # Initialize the client using the secure key
     client = genai.Client(api_key=api_key)
